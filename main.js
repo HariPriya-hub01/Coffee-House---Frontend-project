@@ -5,10 +5,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const header = document.querySelector("header");
 
-  // ==========================
+  
   // Mobile Menu Toggle
-  // ==========================
-
+  
   // Toggles mobile nav visibility on hamburger click
   function toggleMobileNav() {
     document.getElementById("mobileMenu").classList.toggle("show");
@@ -16,10 +15,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Expose function globally to use in inline HTML
   window.toggleMobileNav = toggleMobileNav;
+ 
 
-  // ==========================
   // Initial Page Load Animations
-  // ==========================
 
   function runInitialAnimations() {
     // Create a timeline with default easing
@@ -128,9 +126,7 @@ window.addEventListener("DOMContentLoaded", () => {
       );
   }
 
-  // ==========================
   // Reusable Scroll-Based Animation Setup
-  // ==========================
 
   function pinAndAnimate({
     trigger,
@@ -164,9 +160,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ==========================
   // ScrollTrigger Configurations for Desktop & Mobile
-  // ==========================
 
   function setupScrollAnimations() {
     const headerOffset = header.offsetHeight - 1;
@@ -224,10 +218,9 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ==========================
+ 
   // Init Everything on Load
-  // ==========================
-
+ 
   runInitialAnimations(); // Load-in animations
   setupScrollAnimations(); // Scroll-based animations
 
