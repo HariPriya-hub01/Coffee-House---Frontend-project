@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KapiCraft - Coffee House</title>
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="smooth-wrapper">
+    <!-- ================== HEADER ================== -->
+    <header style="--border-width: 0">
+      <div class="header-inner">
+        <!-- Logo -->
+        <div class="logo">KapiCraft</div>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <a href="#home">Home</a>
+          <a href="#product">Product</a>
+          <a href="#timeline">Our Legacy</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" onclick="toggleMobileNav()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div class="mobile-nav" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#product">Product</a>
+        <a href="#timeline">Our Story</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </header>
+
+    <!-- ================== MAIN CONTENT ================== -->
+    <main id="smooth-content">
+      <!-- Hero Bottle Overlay Wrapper -->
+      <div class="hero-bottle-wrapper">
+        <img src="./assets/images/image.png" alt="Coffee Cup" class="hero-bottle" />
+      </div>
+
+      <!-- Hero Section -->
+      <section id="home" class="hero vintage-hero">
+        <!-- <img src="./heroimg.png" alt="hero beans background" class="hero-bg" /> -->
+        <div class="hero-content">
+          <!-- Decorative Stamp -->
+          <img src="./assets/images/stamp.png" alt="Coffee Stamp" class="hero-stamp" />
+
+          <!-- Main Heading -->
+          <h1>
+            <span class="line">Handpicked</span>
+            <span class="line highlight">Richness</span>
+          </h1>
+        </div>
+      </section>
+
+      <!-- Introduction Section -->
+      <section id="product" class="section-intro">
+        <div class="intro-grid">
+          <!-- Left Side: Headings and Description -->
+          <div class="intro-left">
+            <p class="small-title">Brew Something Special</p>
+            <h2 class="main-heading">Start Your Journey</h2>
+            <p class="description">
+              Craving authentic flavor? Browse our handcrafted coffee selection and find the brew that speaks to you!
+            </p>
+            <a href="#" class="cta-box">Explore All</a>
+          </div>
+
+          <!-- Right Side: Ingredients List -->
+          <div class="intro-right">
+            <div class="ingredients-log">
+              <h3 class="ingredients-title">The Artistry behind every cup</h3>
+
+              <!-- Each Ingredient -->
+              <div class="ingredient-item">
+                <div class="ingredient-qty">3500ft</div>
+                <div class="ingredient-text">
+                  <strong>Shade-Grown Coffee</strong>
+                  <p>Nurtured in the lush hills of the Western Ghats.</p>
+                </div>
+              </div>
+
+              <div class="ingredient-item">
+                <div class="ingredient-qty">100%</div>
+                <div class="ingredient-text">
+                  <strong>Handpicked Beans</strong>
+                  <p>Carefully selected for peak ripeness and bold flavor.</p>
+                </div>
+              </div>
+
+              <div class="ingredient-item">
+                <div class="ingredient-qty">48hr</div>
+                <div class="ingredient-text">
+                  <strong>Sun-Dried & Double Sorted</strong>
+                  <p>Naturally processed to preserve flavor and aroma.</p>
+                </div>
+              </div>
+
+              <div class="ingredient-item">
+                <div class="ingredient-qty">4</div>
+                <div class="ingredient-text">
+                  <strong>Generations of Craftsmanship</strong>
+                  <p>Passed down, perfected, and poured with pride.</p>
+                </div>
+              </div>
+
+              <div class="ingredient-item">
+                <div class="ingredient-qty">1</div>
+                <div class="ingredient-text">
+                  <strong>Timeless Sip</strong>
+                  <p>All it takes to taste a century of tradition.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline Section -->
+      <section id="timeline" class="timeline-section">
+        <h2 class="timeline-main-title">Our Timeline</h2>
+        <!-- First Timeline Entry -->
+        <div class="timeline-entry">
+          <!-- Left Column: Date + Image -->
+          <div class="timeline-left">
+            <div class="timeline-date">1915</div>
+            <img src="./assets/images/first batch.png" alt="Vintage Photo" class="timeline-img" />
+          </div>
+
+          <!-- Right Column: Story -->
+          <div class="timeline-right">
+            <h3 class="timeline-title">Where It All Began</h3>
+            <p class="timeline-description">
+              Coffee plants blossomed in quiet southern hills, beginning a legacy steeped in passion and patience.
+            </p>
+          </div>
+        </div>
+
+        <!-- Second Timeline Entry -->
+        <div class="timeline-entry">
+          <div class="timeline-left">
+            <div class="timeline-date">1978</div>
+            <img src="./assets/images/newChapter.png" alt="Vintage Photo" class="timeline-img" />
+          </div>
+
+          <div class="timeline-right">
+            <h3 class="timeline-title">A New Chapter</h3>
+            <p class="timeline-description">
+              Old-world roasting met hands-on brewing, creating the rich, comforting coffee you know and love today.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Sidebar (Fixed vertical navigation) -->
+      <aside class="social-sidebar" style="--border-height: 0">
+        <nav>
+          <!-- Instagram -->
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5Zm.5 1.5h7.5a4.25 4.25 0 0 1 4.25 4.25v7.5a4.25 4.25 0 0 1-4.25 4.25h-7.5a4.25 4.25 0 0 1-4.25-4.25v-7.5a4.25 4.25 0 0 1 4.25-4.25Zm8.5 2.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Zm-5.25 1.5a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Z"
+              />
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14Zm-3.75 7.25h-.08a2.11 2.11 0 0 0-1.92 1.18V10.5h-2.5v6.75h2.5v-3.43c0-.87.65-1.57 1.45-1.57s1.3.7 1.3 1.57v3.43H18.5v-3.87c0-1.88-1.16-2.81-2.25-2.81ZM7.5 10.5H10V17.25H7.5V10.5Zm1.25-3a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z"
+              />
+            </svg>
+          </a>
+
+          <!-- Twitter -->
+          <a href="#" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M21 5.92a8.18 8.18 0 0 1-2.36.65 4.12 4.12 0 0 0 1.8-2.27 8.21 8.21 0 0 1-2.6.99 4.1 4.1 0 0 0-7 3.73 11.65 11.65 0 0 1-8.46-4.3 4.1 4.1 0 0 0 1.27 5.48 4.07 4.07 0 0 1-1.86-.52v.05a4.1 4.1 0 0 0 3.29 4.02 4.07 4.07 0 0 1-1.85.07 4.1 4.1 0 0 0 3.83 2.85A8.24 8.24 0 0 1 2 19.53a11.62 11.62 0 0 0 6.29 1.84c7.55 0 11.68-6.26 11.68-11.68v-.53a8.36 8.36 0 0 0 2.06-2.13Z"
+              />
+            </svg>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="#" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path
+                d="M12 2C6.48 2 2 6.33 2 11.68c0 2.08.79 3.99 2.11 5.49L2 22l5.01-1.81A10.41 10.41 0 0 0 12 21.36c5.52 0 10-4.33 10-9.68S17.52 2 12 2Zm.04 17.03c-1.61 0-3.15-.46-4.45-1.3l-.32-.2-2.96.97.99-2.88-.21-.33a7.34 7.34 0 0 1-1.24-4.09c0-4.02 3.4-7.29 7.58-7.29 4.19 0 7.59 3.27 7.59 7.29s-3.4 7.3-7.58 7.3Zm3.6-5.4c-.19-.1-1.12-.55-1.3-.61-.18-.06-.31-.1-.44.1s-.5.6-.61.72c-.11.12-.22.13-.41.03a6.22 6.22 0 0 1-1.81-1.6c-.14-.2.14-.3.4-.99.04-.12.02-.22 0-.31s-.44-1.06-.6-1.46c-.16-.4-.33-.34-.45-.35-.12-.01-.25-.01-.38-.01s-.35.05-.53.25c-.18.2-.7.68-.7 1.66s.72 1.92.82 2.05c.1.13 1.41 2.14 3.41 3c.48.21.86.34 1.15.44.48.15.92.13 1.27.08.39-.06 1.2-.49 1.36-.96.17-.47.17-.87.12-.96-.06-.1-.17-.15-.36-.25Z"
+              />
+            </svg>
+          </a>
+
+          <!-- YouTube -->
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path
+                d="M19.6 3.2H4.4C3.1 3.2 2 4.3 2 5.6v12.8c0 1.3 1.1 2.4 2.4 2.4h15.2c1.3 0 2.4-1.1 2.4-2.4V5.6c0-1.3-1.1-2.4-2.4-2.4ZM10 15.5v-7l6 3.5-6 3.5Z"
+              />
+            </svg>
+          </a>
+
+          <!-- Location -->
+          <a href="#" aria-label="Location">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path
+                d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"
+              />
+            </svg>
+          </a>
+        </nav>
+      </aside>
+    </main>
+
+    <!-- ================== FOOTER ================== -->
+    <footer id="contact">
+      <div class="footer-inner">
+        <!-- Logo -->
+        <div class="footer-logo">KapiCraft</div>
+
+        <!-- Navigation Links -->
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Terms</a>
+        </div>
+
+        <!-- Contact and Social Links -->
+        <div class="footer-contact">
+          <a href="#">hello@KapiCraft.com</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with ❤️ by HariPriya</p>
+        <p>© 2025 All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ================== JAVASCRIPT ================== -->
+
+    <!-- GSAP Core Library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+    <!-- GSAP ScrollTrigger Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Custom Main Script -->
+    <script src="main.js"></script>
+  </body>
+</html>
