@@ -1,13 +1,13 @@
 # ☕ Coffee House (Frontend-project)
 A handcrafted frontend experience built with GSAP ScrollTrigger, featuring scroll-driven animations, pin-based transitions and a fully responsive retro-modern layout. Designed with care to deliver smooth immersive storytelling through clean modern code. It’s fun, responsive and brewed just right for today’s web.
 
+[ Click here for live demo ](https://coffee-house-frontend-project.vercel.app/)
+
 ---
 
 ## 🖼️ Preview
 
 ![Hero Screenshot](./assets/responsive_webpage.png)
-
-[Live Demo →](https://coffee-house-frontend-project.vercel.app/)
 
 ---
 
