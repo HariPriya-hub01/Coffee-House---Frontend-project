@@ -407,8 +407,7 @@ footer {
   }
 
   .hero-stamp {
-    max-width: 100px;
-    opacity: 1 !important;
+    max-width: 80px;
   }
 
   .hero-content h1 {
