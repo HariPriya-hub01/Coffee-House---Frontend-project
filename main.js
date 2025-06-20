@@ -211,9 +211,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Init Everything on Load
 
-  if (window.innerWidth > 768) {
-    runInitialAnimations(); // Only run full animations on desktop
-  }
+  //if (window.innerWidth > 768) {
+    //runInitialAnimations(); // Only run full animations on desktop
+  //}
   // Load-in animations
   setupScrollAnimations(); // Scroll-based animations
 
