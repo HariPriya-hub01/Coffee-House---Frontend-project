@@ -160,6 +160,7 @@ window.addEventListener("DOMContentLoaded", () => {
     ScrollTrigger.matchMedia({
       // Desktop scroll animations
       "(min-width: 769px)": function () {
+        runInitialAnimations();
         // 1. Bottle animates on scroll from hero to intro
         pinAndAnimate({
           trigger: ".hero",
@@ -198,6 +199,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
       // Mobile fallback animation (no scroll-based logic)
       "(max-width: 768px)": function () {
+        runInitialAnimations();
         gsap.to(".hero-bottle-wrapper", {
           opacity: 1,
           duration: 1,
