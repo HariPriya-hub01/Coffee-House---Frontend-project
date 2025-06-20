@@ -16,7 +16,7 @@ A handcrafted frontend experience built with GSAP ScrollTrigger, featuring scrol
 - 🎯 **Scroll-based animations** using GSAP ScrollTrigger  
 - 📱 **Fully responsive** layout optimized for desktop and mobile  
 - 🧭 **Smooth navigation** with scroll snapping and section anchoring  
-- 🪶 **Custom fonts and typography** for an old-school vibe  
+- 🖋 **Custom fonts and typography** for an old-school vibe  
 - 🌄 **Hero section with animated coffee cup & stamp**  
 - 🧩 Modular CSS for maintainable styles  
 - 📜 Built for **frontend storytelling and UI portfolio projects**
@@ -114,7 +114,7 @@ Frontend Developer | Portfolio Builder | Coffee Aficionado ☕
 ## 📜 License
 
 This project is for personal/educational use. Feel free to fork, modify, or showcase in your portfolio!
-Please have a look at MIT license for more info.
+Check MIT license for more info.
 
 ---
 
