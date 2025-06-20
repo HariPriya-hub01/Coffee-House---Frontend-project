@@ -408,11 +408,12 @@ footer {
 
   .hero-stamp {
     max-width: 100px;
+    opacity: 1 !important;
   }
 
   .hero-content h1 {
-    font-size: clamp(4rem, 14vw, 8rem);
-    /* font-size: 100px; */
+    font-size: 3.5rem;
+    -webkit-text-stroke: 0.5px var(--sienna);    
   }
 }
 
