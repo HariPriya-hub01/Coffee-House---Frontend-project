@@ -407,7 +407,8 @@ footer {
   }
 
   .hero-stamp {
-    max-width: 100px;
+    max-width: 80px;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1) !important;
     opacity: 1 !important;
   }
 
