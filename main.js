@@ -1,13 +1,11 @@
-// Wait until the full DOM is loaded before running scripts
 window.addEventListener("DOMContentLoaded", () => {
   // Register ScrollTrigger plugin from GSAP
   gsap.registerPlugin(ScrollTrigger);
 
   const header = document.querySelector("header");
 
-  
   // Mobile Menu Toggle
-  
+
   // Toggles mobile nav visibility on hamburger click
   function toggleMobileNav() {
     document.getElementById("mobileMenu").classList.toggle("show");
@@ -15,7 +13,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Expose function globally to use in inline HTML
   window.toggleMobileNav = toggleMobileNav;
- 
 
   // Initial Page Load Animations
 
@@ -128,14 +125,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Reusable Scroll-Based Animation Setup
 
-  function pinAndAnimate({
-    trigger,
-    endTrigger,
-    pin,
-    animations,
-    markers = false,
-    headerOffset = 0,
-  }) {
+  function pinAndAnimate({ trigger, endTrigger, pin, animations, markers = false, headerOffset = 0 }) {
     // Define scroll end position with header offset
     const end = `top top+=${headerOffset}`;
 
@@ -174,9 +164,7 @@ window.addEventListener("DOMContentLoaded", () => {
           trigger: ".hero",
           endTrigger: ".section-intro",
           pin: ".hero-bottle-wrapper",
-          animations: [
-            { target: ".hero-bottle", vars: { rotate: 0, scale: 0.8 } },
-          ],
+          animations: [{ target: ".hero-bottle", vars: { rotate: 0, scale: 0.8 } }],
           headerOffset,
         });
 
@@ -218,10 +206,12 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
- 
   // Init Everything on Load
- 
-  runInitialAnimations(); // Load-in animations
+
+  if (window.innerWidth > 768) {
+    runInitialAnimations(); // Only run full animations on desktop
+  }
+  // Load-in animations
   setupScrollAnimations(); // Scroll-based animations
 
   // Final recalculation for all ScrollTriggers
